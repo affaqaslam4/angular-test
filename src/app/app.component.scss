@@ -1,0 +1,37 @@
+.main-container {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+
+  .sidebar {
+    background: rgb(5, 68, 104);
+    flex: 1 1 0px;
+    margin: 0px;
+    padding: 30px 0px;
+
+    li {
+      list-style: none;
+
+      a {
+        display: block;
+        padding: 13px 30px 13px 30px;
+        border-bottom: 1px solid #10558d;
+        color: rgb(241, 237, 237);
+        font-size: 16px;
+        position: relative;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .content {
+    height: 100%;
+    flex: 4 1 0px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    ::ng-deep .question-detail {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+}
