@@ -4,12 +4,14 @@ import { LinkComponent } from './components/link/link.component';
 import { BoxesComponent } from './components/boxes/boxes.component';
 import { ReducerComponent } from './components/reducer/reducer.component';
 import { UsersComponent } from './components/users/users.component';
+import { FormComponent } from './components/form/form.component';
 
 const routes: Routes = [
   { path: 'question1', component: LinkComponent },
   { path: 'question2', component: BoxesComponent },
   { path: 'question3', component: ReducerComponent },
   { path: 'question4', component: UsersComponent },
+  { path: 'question5', component: FormComponent },
   { path: '', redirectTo: 'question1', pathMatch: 'full' },
 ];
 

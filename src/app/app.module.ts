@@ -8,6 +8,9 @@ import { BoxesComponent } from './components/boxes/boxes.component';
 import { Page404Component } from './components/page404/page404.component';
 import { ReducerComponent } from './components/reducer/reducer.component';
 import { UsersComponent } from './components/users/users.component';
+import { FormComponent } from './components/form/form.component';
+import { UserService } from './services/user.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,10 @@ import { UsersComponent } from './components/users/users.component';
     Page404Component,
     ReducerComponent,
     UsersComponent,
+    FormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  providers: [UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
